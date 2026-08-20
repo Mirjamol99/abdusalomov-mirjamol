@@ -1,0 +1,476 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #172438;
+  color: #222;
+  transition: 0.3s;
+}
+
+.container {
+  width: min(100% - 30px, 900px);
+  margin: 40px auto;
+}
+
+/* PROFILE */
+
+.profile-card {
+  background: white;
+  border-radius: 30px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.25);
+}
+
+.cover {
+  height: 260px;
+  background: linear-gradient(135deg, #526ff5, #7555ef);
+}
+
+.profile-image {
+  width: 220px;
+  height: 220px;
+  margin: -110px auto 0;
+  position: relative;
+  border: 8px solid white;
+  border-radius: 50%;
+  overflow: hidden;
+  background: white;
+}
+
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-content {
+  padding: 35px 30px 45px;
+}
+
+.profile-content h1 {
+  font-size: 46px;
+  line-height: 1.1;
+  margin-top: 25px;
+}
+
+.profession {
+  font-size: 28px;
+  color: #657080;
+  margin-top: 15px;
+}
+
+.bio {
+  max-width: 600px;
+  margin: 20px auto;
+  line-height: 1.7;
+  color: #666;
+}
+
+
+/* SOCIAL */
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin: 30px 0;
+}
+
+.socials a {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+  text-decoration: none;
+
+  font-size: 32px;
+
+  transition: 0.3s;
+}
+
+.socials a:hover {
+  transform: translateY(-8px) scale(1.05);
+}
+
+.facebook {
+  background: #1877f2;
+}
+
+.telegram {
+  background: #2997d8;
+}
+
+.instagram {
+  background: #d6336c;
+}
+
+.youtube {
+  background: #ff2929;
+}
+
+
+/* BUTTONS */
+
+.main-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn {
+  background: #526ff5;
+  color: white;
+  text-decoration: none;
+
+  padding: 17px 50px;
+  border-radius: 40px;
+
+  font-size: 20px;
+
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: translateY(-4px);
+  background: #405be0;
+}
+
+
+/* STATS */
+
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+  margin-top: 40px;
+}
+
+.stats div {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.stats strong {
+  font-size: 28px;
+}
+
+.stats span {
+  color: #777;
+}
+
+
+/* SECTIONS */
+
+.section {
+  background: white;
+  margin-top: 30px;
+  padding: 45px 35px;
+  border-radius: 25px;
+}
+
+.section h2 {
+  text-align: center;
+  font-size: 34px;
+  margin-bottom: 25px;
+}
+
+.section > p {
+  text-align: center;
+  max-width: 700px;
+  margin: auto;
+  line-height: 1.8;
+  color: #666;
+}
+
+
+/* SERVICES */
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.service {
+  padding: 30px;
+  border-radius: 20px;
+  background: #f5f6fa;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.service:hover {
+  transform: translateY(-7px);
+}
+
+.service i {
+  font-size: 40px;
+  color: #526ff5;
+  margin-bottom: 15px;
+}
+
+.service h3 {
+  margin-bottom: 10px;
+}
+
+.service p {
+  color: #777;
+  line-height: 1.5;
+}
+
+
+/* PORTFOLIO */
+
+.portfolio {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.project {
+  overflow: hidden;
+  border-radius: 20px;
+  background: #f5f6fa;
+  transition: 0.3s;
+}
+
+.project:hover {
+  transform: translateY(-7px);
+}
+
+.project img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.project h3 {
+  padding: 15px 20px 5px;
+}
+
+.project p {
+  padding: 0 20px 20px;
+  color: #777;
+}
+
+
+/* REVIEWS */
+
+.reviews {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.review {
+  background: #f5f6fa;
+  padding: 25px;
+  border-radius: 20px;
+}
+
+.stars {
+  color: #f5a623;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.review p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+
+/* CONTACT */
+
+.contact-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 25px;
+  flex-wrap: wrap;
+}
+
+.contact-buttons a {
+  text-decoration: none;
+  color: white;
+  background: #526ff5;
+  padding: 15px 25px;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+.contact-buttons a:hover {
+  transform: translateY(-4px);
+}
+
+
+/* FOOTER */
+
+footer {
+  text-align: center;
+  color: white;
+  padding: 35px 0;
+  line-height: 1.8;
+}
+
+
+/* THEME BUTTON */
+
+.theme-btn,
+.share-btn {
+  position: fixed;
+  right: 25px;
+
+  width: 55px;
+  height: 55px;
+
+  border: none;
+  border-radius: 50%;
+
+  background: white;
+  color: #526ff5;
+
+  font-size: 20px;
+
+  cursor: pointer;
+
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+
+  z-index: 100;
+}
+
+.theme-btn {
+  top: 25px;
+}
+
+.share-btn {
+  top: 90px;
+}
+
+
+/* DARK MODE */
+
+body.dark {
+  background: #0d1117;
+  color: white;
+}
+
+body.dark .profile-card,
+body.dark .section {
+  background: #161b22;
+}
+
+body.dark .profession,
+body.dark .bio,
+body.dark .section > p,
+body.dark .service p,
+body.dark .project p,
+body.dark .review p,
+body.dark .stats span {
+  color: #aaa;
+}
+
+body.dark .service,
+body.dark .project,
+body.dark .review {
+  background: #21262d;
+}
+
+body.dark .theme-btn,
+body.dark .share-btn {
+  background: #21262d;
+  color: white;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+  .container {
+    width: min(100% - 20px, 900px);
+    margin: 20px auto;
+  }
+
+  .cover {
+    height: 200px;
+  }
+
+  .profile-image {
+    width: 170px;
+    height: 170px;
+    margin-top: -85px;
+  }
+
+  .profile-content {
+    padding: 25px 15px 35px;
+  }
+
+  .profile-content h1 {
+    font-size: 32px;
+  }
+
+  .profession {
+    font-size: 22px;
+  }
+
+  .socials {
+    gap: 12px;
+  }
+
+  .socials a {
+    width: 58px;
+    height: 58px;
+    font-size: 25px;
+  }
+
+  .main-buttons {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .stats {
+    gap: 25px;
+  }
+
+  .stats strong {
+    font-size: 22px;
+  }
+
+  .services,
+  .portfolio,
+  .reviews {
+    grid-template-columns: 1fr;
+  }
+
+  .section {
+    padding: 30px 20px;
+  }
+
+  .section h2 {
+    font-size: 28px;
+  }
+
+  .theme-btn,
+  .share-btn {
+    right: 15px;
+  }
+}
